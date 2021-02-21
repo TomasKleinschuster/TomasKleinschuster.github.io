@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0892405011.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Tomas Kleinschuster</title>
+</head>
+<body>
+    <div class="bigBox">
+        <header>
+            <div class="logo">
+                <h1>Tomás Kleinschuster</h1>
+                <p>Front End Developer Junior and Designer</p>
+            </div>
+            <form action="">
+                <input type="text" class="search-bar" id="search-bar" placeholder="Search">
+            </form>
+            <div class="categories" id="categories">
+                <a href="#" class="active">All Projects</a>
+                <a href="#">Javascript</a>
+                <a href="#">Python</a>
+                <a href="#">Blender</a>
+                <a href="#">SolidWorks</a>
+                <a href="#">Others</a>
+            </div>
+            
+        </header>
+
+        <section class="grid" id="grid">
+            <div class="item" 
+                data-category="javascript" 
+                data-tags="programming language javascript" 
+                data-description="All the projects that include javascript."
+            >
+                <div class="item-content">
+                    <img src="img/javascript-logo.png" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-category="python" 
+                data-tags="programming language python" 
+                data-description="All the projects that include python."
+            >
+                <div class="item-content">
+                    <img src="img/python-logo.png" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-category="blender" 
+                data-tags="open source 3d graphics toolset design" 
+                data-description="All the projects that include blender."
+            >
+                <div class="item-content">
+                    <img src="img/blender-logo.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-category="solidworks" 
+                data-tags="solid modeling cad cae design" 
+                data-description="All the projects that include solidworks."
+            >
+                <div class="item-content">
+                    <img src="img/solidworks-logo.png" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-category="others" 
+                data-tags="sketch design" 
+                data-description="All the projects that include sketches."
+            >
+                <div class="item-content">
+                    <img src="img/sketch-logo.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-category="others" 
+                data-tags="wood design" 
+                data-description="All the projects that include woodwork."
+            >
+                <div class="item-content">
+                    <img src="img/woodwork-logo.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="overlay" id="overlay">
+            <div class="container-img">
+                <button id="btn-close-popup"><i class="fas fa-times"></i></button>
+                <img src="" alt="">
+            </div>
+            <p class="description"></p>
+        </section>
+
+        <footer class="bigBox">
+            <div class="social-network">
+                <div class="iconContainer">
+                    <a href="https://www.linkedin.com/in/kleinschuster-tomas/" target="_blank" class="linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <div class="iconContainer">
+                    <a href="https://github.com/TomasKleinschuster" target="_blank" class="gitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="iconContainer">
+                    <a href="https://www.instagram.com/klein_schu/" target="_blank" class="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="madeBy">
+                <p>Sitio diseñado por <a href="#">Tomás Kleinschuster</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
